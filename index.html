@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="images/Tic-Tac-Toe.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Game Controls -->
+
+  <div class="game_controls">
+    <div><img class="game_ticTacToe-icon" src="images/Tic-Tac-Toe.png" alt="Tic Tac Toe Icon"></div>
+    <div id="game_turning">X turn</div>
+    <button id="reset_button"><img src="images/Reset.png" alt="Reset Button"></button>
+  </div>
+
+  <!-- Game Display -->
+
+  <div class="game_display">
+    <div id="resultShow">The winner is ...</div>
+        <div class="game-row1 game-rowAll">
+          <div class="gameBox" data-isPlaced="false" data-positionX="1" data-positionY="1" data-sign=""></div>
+          <div class="gameBox" data-isPlaced="false" data-positionX="2" data-positionY="1" data-sign=""></div>
+          <div class="gameBox" data-isPlaced="false" data-positionX="3" data-positionY="1" data-sign=""></div>
+        </div>
+        <div class="game-row2 game-rowAll">
+          <div class="gameBox" data-isPlaced="false" data-positionX="1" data-positionY="2" data-sign=""></div>
+          <div class="gameBox" data-isPlaced="false" data-positionX="2" data-positionY="2" data-sign=""></div>
+          <div class="gameBox" data-isPlaced="false" data-positionX="3" data-positionY="2" data-sign=""></div>
+        </div>
+        <div class="game-row3 game-rowAll">
+          <div class="gameBox" data-isPlaced="false" data-positionX="1" data-positionY="3" data-sign=""></div>
+          <div class="gameBox" data-isPlaced="false" data-positionX="2" data-positionY="3" data-sign=""></div>
+          <div class="gameBox" data-isPlaced="false" data-positionX="3" data-positionY="3" data-sign=""></div>
+        </div>
+  </div>
+
+  <!-- Game Result -->
+
+  <div class="game_results">
+    <div class="result_boxes playerXResultClass">
+      <span>Player X :</span>
+      <span class="resultNumber" id="playerXResult">0</span>
+    </div>
+    <div class="result_boxes tiesResultClass">
+      <span>Ties :</span>
+      <span class="resultNumber" id="tiesResult">0</span>
+    </div>
+    <div class="result_boxes playerOResultClass">
+      <span>Player O :</span>
+      <span class="resultNumber" id="playerOResult">0</span>
+    </div>
+  </div>
+
+  <!-- JavaSript Links -->
+
+  <script src="game.js"></script>
+
+</body>
+</html>

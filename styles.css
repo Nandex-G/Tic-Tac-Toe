@@ -1,0 +1,200 @@
+
+/* Body Styles */
+
+body {
+    height: 100vh;
+    background-color: #064E3B;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Game Controls */
+
+.game_controls {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Reset Button */
+
+#reset_button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+#reset_button img {
+    width: 40px; 
+    height: 40px;
+    background-color: none;
+}
+#reset_button:hover img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #84CC16;
+}
+
+/* Turning */
+
+#game_turning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 40px;
+    background-color: #022019;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Tic Tac Toe Icon */
+
+.game_ticTacToe-icon {
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Game Display And ... */
+
+.game_display {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 25px;
+    position: relative;
+}
+.game_display .game-rowAll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.game_display .game-rowAll div {
+    width: 100px;
+    height: 100px;
+    background-color:#082F49 ;
+
+
+    border: 3px solid #051c2b;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #051c2b;
+}
+.game_display .game-row1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+.game_display .game-row2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.game_display .game-row3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.gameBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Results */
+
+.game_results {
+    margin-top: 15px;
+    width: 342px;
+    display: flex;
+    justify-content: space-between;
+}
+.result_boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.resultNumber {
+    margin-top: 5px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 500;
+}
+.playerXResultClass {
+    background-color: #0891B2;
+    width: 100px;
+    height: 80px;
+    border-radius: 15px;
+}
+.tiesResultClass {
+    background-color: #CA8A04;
+    width: 100px;
+    height: 80px;
+    border-radius: 15px;
+}
+.playerOResultClass {
+    background-color: #DB2777;
+    width: 100px;
+    height: 80px;
+    border-radius: 15px;
+}
+
+/* Game Icons */
+
+.game-circle {
+    transition: all 0.2s ease; 
+} 
+.circle_SVG .game-circle {
+    stroke: #DB2777;
+    stroke-width: 10;
+    fill: #FDF2F8;
+
+    opacity: 0;
+    transform: scale(2);
+    transform-origin: center;
+    transition: opacity 0.1s ease-in-out , transform .2s ease-in-out;
+}
+
+.crossOut_SVG line {
+    opacity: 0;
+    transform: scale(2);
+    transform-origin: center;
+    transition: opacity 0.1s ease-in-out , transform .2s ease-in-out;
+    stroke: #0891B2;
+}
+.iconAnimation {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+/* Result Show */
+
+#resultShow {
+    width: 100%;  
+    height: 100%;  
+    background-color: #0D9488;
+    position: absolute;
+    border-radius:1rem ;
+    display: none;
+    justify-content:center ;
+    align-items: center;
+    color: #F1F5F9;
+    font-weight: bolder;
+    font-size: 2rem;
+    opacity: 0;
+    transition: .5s;
+    scale: 1.05;
+}
