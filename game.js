@@ -4,10 +4,12 @@
 let XPointsElem = document.querySelector('#playerXResult')
 let TiePointsElem = document.querySelector('#tiesResult')
 let OPointsElem = document.querySelector('#playerOResult')
+
 let resultShowElement = document.querySelector('#resultShow')
 let reset = document.querySelector('#reset_button')
 let gameBox = document.querySelectorAll('.gameBox')
 let turningText = document.querySelector('#game_turning')
+let newGameButton = document.querySelector('#newGame_button')
 
 // Defult Vars
 
@@ -106,8 +108,6 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                 let crossOut_SVG_lines = document.querySelectorAll('.crossOut_SVG line')
                 crossOut_SVG_lines.forEach(item => item.classList.add('iconAnimation'))
             }, 10);
-
-// --------------------------
 
 //          1-1 -------------------------------
 
@@ -340,8 +340,6 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                 
             }, 10);
 
-            // --------------------------
-
 //          1-1 -------------------------------
 
             if (e.target.getAttribute('data-positionX') == 1 & e.target.getAttribute('data-positionY') == 1 ) {
@@ -560,14 +558,11 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     }
                 }
             }
-
-
-
-// --------------------------
-
         }
 
         box.setAttribute('data-isPlaced' , 'true' )
+        
+        return
     }
 
     FullBoxesNumber = 0
@@ -596,3 +591,24 @@ function resetFunc() {
         box.setAttribute('data-sign' , '' )
     })
 }
+
+//  New Game Function ----------------------------
+
+newGameButton.addEventListener('click' ,() => {
+    gameBox.forEach(box => {
+        box.innerHTML = '' 
+        box.setAttribute('data-isPlaced' , 'false' )
+        box.setAttribute('data-sign' , '' )
+    })
+    XPoints = 0
+    TiePoints = 0
+    OPoints = 0
+    FullBoxesNumber = 0
+    turn = 'X'
+    random = Math.floor(Math.random() * 10)
+
+    XPointsElem.innerHTML = 0
+    OPointsElem.innerHTML = 0
+    TiePointsElem.innerHTML = 0
+    
+})

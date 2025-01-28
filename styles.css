@@ -42,6 +42,27 @@ body {
     box-shadow: 0 0 10px #84CC16;
 }
 
+/* New Game Button */
+
+#newGame_button {
+    background-color: #059669;
+    border: 4px solid #052E16;
+    width: 300px;
+    padding: 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    transition: .3s;
+    font-size: 1.45rem;
+}
+#newGame_button:hover {
+    color: #E5E5E5;
+    background-color:#0596689c ;
+    border: 4px solid #052e16c3;
+}
+
 /* Turning */
 
 #game_turning {
