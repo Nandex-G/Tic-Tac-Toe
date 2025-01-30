@@ -40,7 +40,7 @@ function winning(who) {
         TiePointsElem.innerHTML = TiePoints += 1
 
         resultShow(who)
-    }
+    } 
 }
 
 // Result Function ----------------------------
@@ -116,6 +116,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -124,6 +125,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -132,6 +134,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="1"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -143,6 +146,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -151,6 +155,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="1"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -162,6 +167,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -170,6 +176,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -178,6 +185,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="1"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -189,6 +197,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="2"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -197,6 +206,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -208,6 +218,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -216,6 +227,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="2"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -224,6 +236,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -232,6 +245,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -243,6 +257,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -251,6 +266,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="2"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -262,6 +278,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="2"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -270,6 +287,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="1"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -278,6 +296,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -289,6 +308,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="2"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -297,6 +317,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -308,6 +329,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="3"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -316,6 +338,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="2"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -324,6 +347,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="2"]').getAttribute('data-sign') === 'X') {
                         winning('X')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -347,6 +371,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -355,6 +380,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -363,6 +389,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="1"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -374,6 +401,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -382,6 +410,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="1"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -393,6 +422,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -401,6 +431,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -409,6 +440,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="1"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -420,6 +452,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="2"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -428,6 +461,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -439,6 +473,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -447,6 +482,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="2"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -455,6 +491,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -463,6 +500,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -474,6 +512,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -482,6 +521,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="2"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -493,6 +533,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="1"][data-positionY="2"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -501,6 +542,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="1"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -509,6 +551,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -520,6 +563,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="2"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -528,6 +572,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -539,6 +584,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="3"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -547,6 +593,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="2"][data-positionY="2"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -555,6 +602,7 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
                     if (document.querySelector('[data-positionX="3"][data-positionY="2"]').getAttribute('data-sign') === 'O') {
                         winning('O')
                         FullBoxesNumber = 0
+                        return
                     }
                 }
             }
@@ -604,6 +652,7 @@ newGameButton.addEventListener('click' ,() => {
     TiePoints = 0
     OPoints = 0
     FullBoxesNumber = 0
+    return
     turn = 'X'
     random = Math.floor(Math.random() * 10)
 
