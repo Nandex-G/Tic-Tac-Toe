@@ -609,8 +609,6 @@ gameBox.forEach( box => { box.addEventListener('click' , (e) => {
         }
 
         box.setAttribute('data-isPlaced' , 'true' )
-        
-        return
     }
 
     FullBoxesNumber = 0
@@ -652,7 +650,6 @@ newGameButton.addEventListener('click' ,() => {
     TiePoints = 0
     OPoints = 0
     FullBoxesNumber = 0
-    return
     turn = 'X'
     random = Math.floor(Math.random() * 10)
 
